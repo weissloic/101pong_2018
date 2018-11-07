@@ -1,6 +1,12 @@
+/*
+** EPITECH PROJECT, 2018
+** 101pong_2018
+** File description:
+** [enter description here]
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-
 
 int main(int argc, char *argv[])
 {
@@ -21,16 +27,10 @@ int main(int argc, char *argv[])
     Coord_vect_x = (x1 - x0);
     Coord_vect_y = y1 - y0;
     Coord_vect_z = z1 - z0;
-    /*------------------------------------------------------------------------------------------*/
     Coord_vect_x_time_n = Coord_vect_x * n + x1;
     Coord_vect_y_time_n = Coord_vect_y * n + y1;
     Coord_vect_z_time_n = Coord_vect_z * n + z1;
-
-   // Coord_vect_z = atoi(argv[6]) - atoi(argv[3]);
     printf("The velocity vector of the ball is :\n (%.2f %.2f %.2f)", Coord_vect_x, Coord_vect_y, Coord_vect_z);
     printf("\nAt time t + %d, ball coordinates will be:\n (%.2f, %.2f, %.2f)",n, Coord_vect_x_time_n, Coord_vect_y_time_n, Coord_vect_z_time_n);
     return (0);
-
-
-
 }
