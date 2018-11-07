@@ -10,6 +10,9 @@
 
 int main(int argc, char *argv[])
 {
+    if (argc < 8)
+        return (84);
+
     float x0 = atof(argv[1]);
     float y0 = atof(argv[2]);
     float z0 = atof(argv[3]);
