@@ -14,15 +14,13 @@ OBJ = $(SRC:.c=.o)
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	make -C lib/my
-	gcc -o $(NAME) $(SRC) -Llib/my -lmy -Iinclude
+	gcc -o $(NAME) $(SRC) -lm
 
 clean:
-	make clean -C lib/my
-
-fclean:	clean
+	rm *.o
+fclean:
 	rm -f $(NAME)
-	make fclean -C lib/my
+	make clean
 
 re: fclean all
 

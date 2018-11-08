@@ -9,7 +9,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include <fenv.h>
-#include "include/my.h"
 
 int main(int argc, char *argv[])
 {
@@ -38,7 +37,7 @@ int main(int argc, char *argv[])
     float longUV = 0;
     float angle = 0;
 
-    Coord_vect_x = (x1 - x0); // 2 sans sqrt * 3 / *2 sqrt 
+    Coord_vect_x = (x1 - x0); // 2 sans sqrt * 3 / *2 sqrt
     Coord_vect_y = (y1 - y0);
     Coord_vect_z = (z1 - z0);
 
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
     longUV = (Coord_vect_long1 * Coord_vect_long2);
 
     longUV = (Coord_vect_long3/((Coord_vect_long1) * (Coord_vect_long2)));
-    
+
     angle = acos(longUV) * 57.295779513;
 
     printf("The velocity vector of the ball is :\n(%.2f, %.2f, %.2f)", Coord_vect_x, Coord_vect_y, Coord_vect_z);
@@ -62,7 +61,7 @@ int main(int argc, char *argv[])
     if (Coord_vect_z != 0 && ((-z1)/Coord_vect_z) >= 0 && z1 != 0)
     printf("\nThe incidence angle is:\n%.2f degrees", angle);
 
-    else 
+    else
         printf("\nThe ball won't reach the bat");
 
     return (0);
