@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc != 8) {
+    if (argc < 8) {
         printf("%s\n", "Invalid numbers of arguments.");
         return (84);
     }
@@ -54,7 +54,9 @@ int main(int argc, char *argv[])
 
 
     longUV = (Coord_vect_long3/((Coord_vect_long1) * (Coord_vect_long2)));
+    longUV = fabs(longUV);
     angle = acos(longUV) * 57.295779513;
+    angle = fabs(angle);
 
 
     printf("The velocity vector of the ball is:\n(%.2f, %.2f, %.2f)", Coord_vect_x, Coord_vect_y, Coord_vect_z);
