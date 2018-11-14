@@ -8,7 +8,6 @@
 NAME = 101pong
 
 SRC =	pong.c \
-		my_str_isnum.c \
 		my_strlen.c
 
 OBJ = $(SRC:.c=.o)

@@ -12,11 +12,11 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc < 8) {
+    /*if (argc < 8) {
         printf("%s\n", "Invalid numbers of arguments.");
         return (84);
-    }
-    int i = 1;
+    }*/
+
     /*while (i != 8) {
         if (my_str_isnum(argv[i]) != 1) {
             printf("Invalid formats of arguments.\n");
@@ -67,5 +67,5 @@ int main(int argc, char *argv[])
     }
     else
         printf("\nThe ball won't reach the bat\n");
-    return (84);
+    //return (84);
 }
