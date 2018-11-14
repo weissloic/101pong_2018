@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
             return (84);
         }
         i++;*/
-    
+
 
     float x0 = atof(argv[1]);
     float y0 = atof(argv[2]);
