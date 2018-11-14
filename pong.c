@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc != 8) {
+    if (argc < 8) {
         printf("%s\n", "Invalid numbers of arguments.");
         return (84);
     }
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
             return (84);
         }
         i++;*/
-    
+
 
     float x0 = atof(argv[1]);
     float y0 = atof(argv[2]);
