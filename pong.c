@@ -12,10 +12,10 @@
 
 int main(int argc, char *argv[])
 {
-    /*if (argc < 8) {
+    if (argc < 8) {
         printf("%s\n", "Invalid numbers of arguments.");
         return (84);
-    }*/
+    }
 
     /*while (i != 8) {
         if (my_str_isnum(argv[i]) != 1) {
@@ -63,7 +63,6 @@ int main(int argc, char *argv[])
     printf("\nAt time t + %d, ball coordinates will be:\n(%.2f, %.2f, %.2f)",n, Coord_vect_x_time_n, Coord_vect_y_time_n, Coord_vect_z_time_n);
     if (Coord_vect_z != 0 && ((-z1)/Coord_vect_z) >= 0 && z1 != 0) {
         printf("\nThe incidence angle is:\n%.2f degrees\n", angle);
-        return(angle);
     }
     else
         printf("\nThe ball won't reach the bat\n");
